@@ -1,0 +1,20 @@
+
+<p>id: {{user[0].id}}</p>
+<p>Name: {{user[0].name}}</p>
+<p>Surname: {{user[0].surname}}</p>
+<p>Age: {{user[0].age}}</p>
+<p>Date of birth: {{user[0].dateOfBirth | date:'d, MMM, y'}}</p>
+<h3>Address:</h3>
+<p>City: {{user[0].address.city}}</p>
+<p>Street: {{user[0].address.street}}</p>
+<p>PostalCode: {{user[0].address.postalCode}}</p>
+<p>Role: {{user[0].role | lowercase}}</p>
+
+<div class="container-img">
+    <img src="{{getApiCat()}}" alt="{{getImgTitle()}}">
+</div>
+<p>Gender: {{user[0].gender | lowercase}}</p>
+<p [style.fontWeight]="'bold'">Company: {{user[0].companies[0].name}}</p>
+<p>Description: {{user[0].companies[0].description}}</p>
+<p [style.fontWeight]="'bold'">Company: {{user[0].companies[1].name}}</p>
+<p>Description: {{user[0].companies[1].description}}</p>
