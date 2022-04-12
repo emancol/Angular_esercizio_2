@@ -51,11 +51,8 @@ export class UserDetailsComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  getApiCat(par?: string):string{
-    return 'https://cdn.pixabay.com/photo/2014/04/13/20/49/cat-323262_960_720.jpg';
-  }
   
-  
+
   getImgTitle(par?: string):string{
     return 'Ciao Bernard, cosa ne pensi della Brexit?';
   }

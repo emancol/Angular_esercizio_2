@@ -11,7 +11,7 @@
 <p>Role: {{user[0].role | lowercase}}</p>
 
 <div class="container-img">
-    <img src="{{getApiCat()}}" alt="{{getImgTitle()}}">
+    <img src="{{user[0].profilePhotoUrl}}" alt="{{getImgTitle()}}">
 </div>
 <p>Gender: {{user[0].gender | lowercase}}</p>
 <p [style.fontWeight]="'bold'">Company: {{user[0].companies[0].name}}</p>
